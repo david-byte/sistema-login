@@ -91,7 +91,7 @@ input:focus::-webkit-input-placeholder {
 .label-input{
     display: flex;
     align-items: center;
-    margin: 3px;
+    margin: 12px;
     background-color: #fff;
     border-radius: 5px;    
 }
@@ -123,6 +123,11 @@ input:focus::-webkit-input-placeholder {
 footer{
     position: absolute;
     bottom: 0;
+}
+
+.msg-erros{
+    list-style-type: none;
+    color: red;
 }
 
 @media only screen and (max-width: 640px){
