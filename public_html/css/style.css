@@ -1,24 +1,146 @@
 /** Formatação do Sistema de Login **/
-*{margin:0;padding:0;}
-header h1{
-    display: none;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
 }
 #container{
-    font-family: 'Roboto', sans-serif;
     height: 100vh;
     width: 100vw;
-    background-color: #e6f2f0;
     display: flex;
-    flex-direction: row;
     justify-content: center;
+    align-items: center;
+    background-image: url('../img/space.jpg');
+}
+
+.content{
+    height: 70%;
+    width: 50%;
+    /*display: flex;*/ /*ja está definido no container*/
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+}
+
+.title{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    line-height: 70px;
+}
+
+.description{
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 20px;
+}
+
+.second-column{
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-#box{
-    width: 300px;
-    height: 300px;
+.form{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
 }
 
-#legend{
-    text-align: center;
+.form input{
+    height: 45px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px; 
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+::placeholder{
+    color: #A9A9A9;
+    padding: 0 10px;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+    transition: 0.9s;
+ 
+ }
+ input:focus:-moz-placeholder { /* Firefox 18- */
+    color: transparent;  
+    transition: 0.9s;
+ }
+ input:focus::-moz-placeholder {  /* Firefox 19+ */
+    color: transparent;  
+    transition: 0.9s;
+ }
+ input:focus:-ms-input-placeholder {  
+    color: transparent;  
+    transition: 0.9s;
+ }
+ 
+
+.label-input{
+    display: flex;
+    align-items: center;
+    margin: 3px;
+    background-color: #fff;
+    border-radius: 5px;    
+}
+
+.icon{
+    color: #A9A9A9;
+    padding: 0 10px;
+}
+
+.btn{
+    width: 160px;
+    margin-top: 1em;  
+    border-radius: 5px;
+    border-width: 0;
+    padding: 7px 50px;
+    background-color: #3de6af;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    align-self: center;
+}
+
+.btn:hover{
+    background-color: #0E402D;
+    color: white;
+    transition: 0.5s;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+}
+
+@media only screen and (max-width: 640px){
+    .content{
+        height: 70%;
+        width: 100%;
+        /*display: flex;*/ /*ja está definido no container*/
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 15px;
+    }
+    .second-column{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
 }
