@@ -21,7 +21,9 @@ mysqli_close($connect);
 	<meta charset="utf-8">
 </head>
 <body>
-	<h1>Olá <?php echo $dados['login_usuario']; ?></h1>
+    <h1>Olá <?php echo $dados['login_usuario']; ?></h1>
+    <h2>Essa é a página restrita</h2>
+	<p>Ao clicar em "Sair", a seção será destruida</p>
 	<a href="logout.php">Sair</a>
 
 </body>
